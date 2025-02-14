@@ -36,7 +36,7 @@ const ReferNow = () => {
         e.preventDefault();
         if (!validateForm()) return ;
             try {
-            const response = await axios.post('https://accredian-backend-task-xge8.onrender.com', formData);
+            const response = await axios.post('https://accredian-backend-task-xge8.onrender.com/api/referral', formData);
             alert('Referral submitted successfully!');
             setIsModalOpen(false);
             setFormData({
